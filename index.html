@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>hangman</title>
+    <style>
+    body { 
+      background-color: #C4FCEF;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           flex-direction: column;
+    }
+    .hide{
+      display: none;
+    }
+
+    div {
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            margin: 5px;
+            float: left;
+            color: white;
+            font-size: 0px;
+            text-align: center;
+            line-height: 30px;
+            border: 2px solid black;
+        }
+      .correct{
+            font-size: 20px;
+            background-color: green;
+        }
+    .playerPoints{
+      width: 400px;
+      text-align: left;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Hangman</h1>
+
+
+
+    <table id="menuTable">
+      <th>
+          Type in new word:
+      </th>
+      <th>
+          <input type="password" id="inputKeyWord">
+      </th>
+      <th>
+          <button id="startButton">Add and start!</button>
+      </th>
+    </table>
+    <p id="divDisplay">
+    </p>
+
+    <divPicture id="picture"></divPicture>
+    
+    <button id="newGame" class="hide">Next game!</button>
+
+  </body>
+  <script src="main.js"></script>
+</html>
+
